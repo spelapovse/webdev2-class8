@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Seznam komentarjev</title>
+</head>
+<body>
+    <h1>Seznam komentarjev</h1>
+    {% for komentar in seznam %}
+    <p>{{ komentar.vsebina }}</p>
+    <p>{{ komentar.objava_id }}</p>
+    <p>{{ komentar.uporabnik_email }}</p>
+    <p>________________</p>
+    {% endfor %}
+
+</body>
+</html>
